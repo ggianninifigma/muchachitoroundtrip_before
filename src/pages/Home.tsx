@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { products } from "../data/products";
 import { ProductCard } from "../components/ProductCard";
 import { Button } from "../components/Button";
+import { asset } from "../lib/asset";
 import "./Home.css";
 
 const concerts = [
@@ -31,7 +32,7 @@ export function Home() {
         <div className="container hero__inner">
           <img
             className="hero__mark"
-            src="/images/calavera_fileteblanco.avif"
+            src={asset("/images/calavera_fileteblanco.avif")}
             alt=""
             aria-hidden
           />
@@ -68,7 +69,7 @@ export function Home() {
             </div>
             <figure className="bio__figure">
               <img
-                src="/images/muchachito_portrait.jpg"
+                src={asset("/images/muchachito_portrait.jpg")}
                 alt="Muchachito playing his signature “13” guitar"
               />
               <figcaption>Jairo Perera — Muchachito</figcaption>

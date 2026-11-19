@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset";
+
 export type ProductType = "Vinyl" | "Album" | "Apparel" | "Bundle";
 
 export interface Product {
@@ -21,7 +23,7 @@ export const products: Product[] = [
     price: 21.5,
     priceLabel: "€21.50",
     onSale: true,
-    image: "/images/Ficticio_JiroVinilo_tienda.webp",
+    image: asset("/images/Ficticio_JiroVinilo_tienda.webp"),
     blurb: "Limited edition 12\" vinyl + bonus CD “La Maqueta”.",
     description:
       "The fourth studio album from Muchachito, self-produced alongside Diego Pozo “El Ratón” and Ale Acosta. A full-throttle mix of rumba, swing and street soul, pressed on heavyweight vinyl.",
@@ -38,7 +40,7 @@ export const products: Product[] = [
     price: 29.0,
     priceLabel: "€29.00",
     onSale: true,
-    image: "/images/Ficticio_VamosVinilo.webp",
+    image: asset("/images/Ficticio_VamosVinilo.webp"),
     blurb: "Limited double-vinyl edition of the 2004 debut.",
     description:
       "The record that started it all. The 2004 debut of Bombo Infierno, reissued as a limited double-vinyl edition. Barcelona street rumba at its rawest.",
@@ -55,7 +57,7 @@ export const products: Product[] = [
     price: 23.9,
     priceLabel: "€12.50 – €23.90",
     onSale: true,
-    image: "/images/Vinilo_CD_1080.webp",
+    image: asset("/images/Vinilo_CD_1080.webp"),
     blurb: "The 2023 album. Available on CD or vinyl.",
     description:
       "The 2023 Muchachito Bombo Infierno album, mixed by Ferris Aromí and Muchachito, produced by Muchachito and David Carrasco. Sonido RumbaOrleans at its finest.",
@@ -72,7 +74,7 @@ export const products: Product[] = [
     price: 20.0,
     priceLabel: "€20.00",
     onSale: true,
-    image: "/images/QPSM_Coche_Tienda_cuadrado.webp",
+    image: asset("/images/QPSM_Coche_Tienda_cuadrado.webp"),
     blurb: "Black cotton tee — “Qué Puede Salir Mal” artwork.",
     description:
       "100% cotton black tee featuring the “Qué Puede Salir Mal” cover art. Screen-printed, soft-hand finish. Unisex fit.",
@@ -89,7 +91,7 @@ export const products: Product[] = [
     price: 19.0,
     priceLabel: "€5.00 – €19.00",
     onSale: true,
-    image: "/images/discos.webp",
+    image: asset("/images/discos.webp"),
     blurb: "Pick-your-own bundle across the full catalogue.",
     description:
       "Build your own bundle from the full Muchachito catalogue — from “Vamos que nos vamos” to “El Jiro”. The more you add, the more you save.",

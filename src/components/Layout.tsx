@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { asset } from "../lib/asset";
 import "./Layout.css";
 
 export function Layout() {
@@ -11,7 +12,7 @@ export function Layout() {
         <div className="container site-header__inner">
           <Link to="/" className="site-header__brand" aria-label="Home">
             <img
-              src="/images/muchachito_logo_rojo.avif"
+              src={asset("/images/muchachito_logo_rojo.avif")}
               alt="Muchachito Bombo Infierno"
             />
           </Link>
